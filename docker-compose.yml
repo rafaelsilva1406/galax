@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  galax-dev:
+    build:
+      context: .
+      target: development
+    ports:
+      - "19006:19006"  # Expo web dev server
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run web
+    networks:
+      - galax-network
+
+  galax-prod:
+    build:
+      context: .
+      target: production
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - galax-network
+
+networks:
+  galax-network:
+    driver: bridge
