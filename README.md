@@ -314,15 +314,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **Original Game**: Created by Rafael Silva in 2011
-- **Music**: DeadMau5 tracks (with permission)
-- **Sound Effects**: SoundJay and Sound Bible
 - **Sprites**: Original artwork and public domain assets
 
 ## 📧 Support
 
 - **Issues**: [GitHub Issues](link-to-issues)
 - **Discussions**: [GitHub Discussions](link-to-discussions)
-- **Email**: [your-email@domain.com](mailto:your-email@domain.com)
+- **Email**: [rafaelsilva1406@gmail.com](mailto:rafaelsilva1406@gmail.com)
 
 ---
 
