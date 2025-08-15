@@ -1,0 +1,7 @@
+# Copy this file to terraform.tfvars and update with your values
+
+resource_group_name = "rg-galax-game-prod"
+location = "East US"
+app_service_plan_name = "asp-galax-game-prod" 
+app_service_name = "app-galax-game-prod"
+container_registry_name = "acrgalaxgameprod"
