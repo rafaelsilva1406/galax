@@ -1,317 +1,331 @@
-# galax
-
-
-
- Swirl Productions
-
-
-Design Document for:
-
-
-  Galaxy
-
-
-
-
-
-
-
-
-
-All work Copyright ©2011 by Swirl Productions
-
-Rafael Silva
-
-Table of Contents
-
-Name of Game	Error! Bookmark not defined.
-Game Overview	4
-Philosophy	4
-Philosophical point #1	4
-Philosophical point #2	4
-Philosophical point #3	4
-Common Questions	4
-What is the game?	4
-Why create this game?	4
-Where does the game take place?	4
-What do I control?	4
-How many characters do I control?	4
-What is the main focus?	4
-What’s different?	4
-Feature Set	5
-General Features	5
-Multi-player Features	5
-Editor	5
-Game play	5
-The Game World	6
-Overview	6
-World Feature #1	6
-World Feature #2	6
-The Physical World	6
-Overview	6
-Key Locations	6
-Travel	6
-Scale	6
-Objects	6
-Weather	6
-Day and Night	6
-Time	6
-Rendering System	7
-Overview	7
-2D/3D Rendering	7
-Camera	7
-Overview	7
-Camera Detail #1	7
-Camera Detail #2	7
-Game Engine	7
-Overview	7
-Game Engine Detail #1	7
-Water	7
-Collision Detection	7
-Game Characters	8
-Overview	8
-Creating a Character	8
-Enemies and Monsters	8
-User Interface	9
-Overview	9
-User Interface Detail #1	9
-Weapons	10
-Overview	10
-Weapons Details #1	10
-Weapons Details #2	10
-Musical Scores and Sound Effects	11
-Musical Overview	11
-Sound effects Overview	11
+# 🚀 Galax - Space Adventure Remastered
 
-Single Player Game	12
-Overview	12
-Single Player Game Detail #1	12
-Single Player Game Detail #2	12
-Story	12
-Hours of Game-play	12
-Victory Conditions	12
-Character Rendering	13
-Overview	13
-Character Rendering Detail #1	13
-Character Rendering Detail #2	13
-World Editing	13
-Overview	13
-World Editing Detail #1	13
-World Editing Detail #2	13
-
-Game Overview
+A modern cross-platform recreation of the classic 2011 C++ space shooter game, now built with React Native, Expo, and TypeScript for web and mobile platforms.
 
-Game design goals
+![Galax Game Screenshot](docs/images/galax-screenshot.png)
 
-Goal #1
+## 🎮 Game Overview
 
-	This game is independent
+**Galax** is a 2D side-scrolling space shooter where players control a spaceship navigating through space and time. Destroy enemies, collect power-ups, and survive as long as possible while searching for the wormhole that will take you home.
 
-Philosophical point #2
+### Features
 
-	Create an engaging experience with simple game mechanics
+- 🌌 **Cross-platform**: Runs on web browsers and mobile devices
+- 🎯 **Classic Gameplay**: Faithful recreation of the original game mechanics
+- 🎨 **Modern UI**: Bootstrap-styled interface with responsive design
+- 🎮 **Adaptive Controls**: Touch controls for mobile, keyboard for desktop
+- ⚡ **Performance Optimized**: 60fps gameplay with efficient collision detection
+- 🏆 **Score System**: High score tracking with persistent storage
+- 🔊 **Audio**: Original sound effects and background music
+- 📱 **PWA Ready**: Installable as a Progressive Web App
 
-Common Questions
+## 🛠️ Technology Stack
 
-What is the game?
-
-The game is a side scrolling shooter
-
-Why create this game?
-
-	This game is being created for the C++
-Where does the game take place?
-
-	Space is the world player is lost and needs to find the right worm hole that will take him back to the recent time period.
-What do I control?
-
-	The player controls space ship
-
-What is the main focus?
-
-	The main focus of the game is that the player needs destroy anything that will cause the ship harm. 
-
-What’s different?
-
-This game is different from the rest by having simple game-play.
-
-Feature Set
-
-General Features
-Side scrolling shooter
-2D graphics
-
-
-Multiplayer Features
-
-This game has no multiplayer features
-
-Editor
-
-There will be no editor 
-
-Gameplay
-Use basic key to control ship
-Randomized power up
-Side scrolling at various speeds
-
-The Game World
-
-Overview
- 
-
-	The space ship goes in various time periods skipping to many different time periods.
-
-Feature #1
-
-	Background bending with gameplay
-Feature #2
-
-	Endless ammo
-
-The Physical World
-
-Overview
-
-	Space physics
-Key Locations
-
-	Space
-
-Travel
-
-	The space ship travels different time periods
-
-Scale
-
-	Describe the scale that you will use to represent the world.  Scale is important!	
-
-Objects
-
-	There are only power ups as objects in the game power ups will increase your health and ammo clips
-
-Day and Night
-
-
-Time
-
-	The way time will work in our environment will depend on the scroll speed of the current level
-Rendering System
-
-Overview
-2D/3D Rendering
-
-	The rendering engine 
-
-Camera
-
-Overview
-
-The camera will be 2d side scrolling
-
-Camera Detail #1
-
-	The camera will move from the left side of the level to the right until it reaches the end
-
-Camera Detail #2
-
-	The camera scrolling speed will depend on the level
-
-Game Engine
-
-Overview
-
-	The game engine that we will be using is the fish bowl engine built by Jessica Kim specifically for this flash competition
-
-Game Engine Detail #1
-
-	The game engine will keep track of everything in the world like the power ups and health bar.
-
-Water
-
-	There will be no water effect in the game
-
-Collision Detection
-
-	Our game engine handles collision detection really well. 
-
-	
-
-Game Characters
-
-Overview
-
-	Space ship – Main Hero of the game	
-	Astroid,planet – Enemies
-	
-
-Creating a Character
-
-	You don’t have the ability to create a character
-
-Enemies and Monsters
-
-	The enemies of the game asteroid and planets.
-User Interface
-
-Overview
-
-	
-
-
-Weapons
-
-Overview
-
-	There is only one weapon is the beam that the space ship shots.
-
-Weapons Details #1
-The beam
-
-Weapons Details #2
-Infinite ammo
-
-
-Musical Scores and Sound Effects
-
-Music Overview
-The music we used in the game was written by musical artists. The Musical artists are DeadMau5.  
-
-
-Sound Effects Overview
-
-The sound effects will be covered by Soundjay and Sound bible which provided us with free sound effects for our game. Soundjay and Sound Bible are both websites that provide people with free sound effects.	
-
-
-Single-Player Game
-
-Overview
-
-	The single player game experience would be rather simple at the start and pick up in difficulty as the game progress. It will be simple to grasp the gameplay mechanics in the first two levels to get the player familiar with the game. When the player knows the control it will pick up in speed to make the game more engaging to the player.
-
-Single Player Game Detail #1
-The game will only use simple keys to control space ship.
-
-Story
-
-Hours of Gameplay
-
-	The length of the game will be about 5 to 10 minutes 
-
-Victory Conditions
-
-	The player wins the game by surviving 
-
-
-Character Rendering
-
-Overview
-
-	All of the character rendering will be done by the adobe 
-
-
-World Editing
-
-Overview
-
-	There is no world editor
+- **Frontend**: React Native with Expo
+- **Language**: TypeScript
+- **Styling**: Bootstrap 5 + React Bootstrap
+- **Graphics**: Three.js / React Three Fiber
+- **Testing**: Jest (unit) + Playwright (E2E)
+- **CI/CD**: GitHub Actions
+- **Infrastructure**: Docker + Terraform
+- **Deployment**: Azure App Service + Expo
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+- Git
+
+### Development Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd galax/galax-game
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+3. **Start development server**
+   ```bash
+   # For web development
+   npm run web
+   
+   # For mobile development (requires Expo CLI)
+   npm start
+   ```
+
+4. **Access the game**
+   - **Web**: Open http://localhost:19006
+   - **Mobile**: Scan QR code with Expo Go app
+
+## 🧪 Testing
+
+### Unit Tests
+```bash
+# Run all unit tests
+npm test
+
+# Run with coverage
+npm run test:coverage
+
+# Watch mode for development
+npm run test:watch
+```
+
+### End-to-End Tests
+```bash
+# Run E2E tests (headless)
+npm run test:e2e
+
+# Run with browser UI
+npm run test:e2e:headed
+```
+
+## 🐳 Docker Development
+
+### Local Development
+```bash
+# Start development environment
+npm run docker:dev
+
+# Build production image
+npm run docker:build
+
+# Run production container
+npm run docker:run
+```
+
+### Docker Compose
+```bash
+# Development
+docker-compose up galax-dev
+
+# Production
+docker-compose up galax-prod
+```
+
+## 🌍 Deployment
+
+### Azure Deployment
+
+1. **Setup Azure credentials**
+   ```bash
+   # Login to Azure CLI
+   az login
+   
+   # Create service principal for GitHub Actions
+   az ad sp create-for-rbac --name "galax-game-deploy" --role contributor \
+     --scopes /subscriptions/{subscription-id} --sdk-auth
+   ```
+
+2. **Configure GitHub Secrets**
+   - `AZURE_CREDENTIALS`: Output from service principal creation
+   - `EXPO_TOKEN`: Expo access token
+   - `NETLIFY_AUTH_TOKEN`: For PR previews
+   - `NETLIFY_SITE_ID`: For PR previews
+
+3. **Deploy with Terraform**
+   ```bash
+   cd infrastructure
+   terraform init
+   terraform plan
+   terraform apply
+   ```
+
+### Manual Deployment
+
+#### Web Build
+```bash
+npm run build:web
+# Deploy web-build/ directory to your web server
+```
+
+#### Expo Deployment
+```bash
+# Install Expo CLI
+npm install -g @expo/cli
+
+# Login to Expo
+expo login
+
+# Publish update
+expo publish
+```
+
+## 🎮 How to Play
+
+### Controls
+
+**Desktop (Web)**:
+- **Movement**: WASD keys or Arrow keys
+- **Fire**: Spacebar or Enter
+- **Pause**: ESC key
+
+**Mobile**:
+- **Movement**: Left side touch pad (directional buttons)
+- **Fire**: Right side fire button
+- **Pause**: Tap pause button (top right)
+
+### Gameplay
+
+1. **Objective**: Survive as long as possible and achieve the highest score
+2. **Enemies**: Destroy asteroids, planets, and viruses for points
+3. **Power-ups**: Collect health and energy boosts
+4. **Scoring**: Different enemies give different point values
+5. **Health**: Avoid collisions to maintain your health
+6. **Energy**: Required for firing weapons (regenerates over time)
+
+### Scoring System
+
+- **Asteroids**: 100 points
+- **Planets**: 200 points  
+- **Viruses**: 50 points
+- **Survival Bonus**: Points increase over time
+
+## 🏗️ Project Structure
+
+```
+galax-game/
+├── src/
+│   ├── components/          # React components
+│   │   ├── GameCanvas.tsx   # Main game rendering
+│   │   ├── GameControls.tsx # Input handling
+│   │   └── GameHUD.tsx      # UI overlay
+│   ├── screens/             # Screen components
+│   │   ├── MenuScreen.tsx   # Main menu
+│   │   └── GameScreen.tsx   # Game screen
+│   ├── game/                # Game logic
+│   │   └── GameEngine.ts    # Core game engine
+│   ├── types/               # TypeScript definitions
+│   ├── utils/               # Utility functions
+│   └── assets/              # Game assets
+│       ├── images/          # Sprites and textures
+│       └── sounds/          # Audio files
+├── tests/
+│   ├── unit/               # Jest unit tests
+│   └── e2e/                # Playwright E2E tests
+├── infrastructure/         # Terraform configs
+├── .github/workflows/      # CI/CD pipelines
+├── docker-compose.yml      # Docker setup
+└── Dockerfile             # Container definition
+```
+
+## 🔧 Development
+
+### Code Style
+
+- **ESLint**: Automated linting
+- **TypeScript**: Strict type checking
+- **Prettier**: Code formatting
+
+```bash
+npm run lint          # Check code style
+npm run lint:fix      # Fix auto-fixable issues
+npm run type-check    # TypeScript validation
+```
+
+### Game Architecture
+
+The game follows a modular architecture:
+
+1. **GameEngine**: Core game logic and state management
+2. **Components**: React components for rendering and UI
+3. **Types**: TypeScript interfaces for type safety
+4. **Utils**: Reusable utility functions
+
+### Adding New Features
+
+1. **Create types** in `src/types/`
+2. **Implement logic** in `src/game/`
+3. **Add components** in `src/components/`
+4. **Write tests** in `tests/`
+5. **Update documentation**
+
+## 📊 Performance
+
+### Optimization Features
+
+- **Object Pooling**: Efficient memory management
+- **Collision Detection**: Optimized AABB collision system
+- **Render Optimization**: Only render visible objects
+- **Asset Loading**: Lazy loading of game assets
+- **Bundle Splitting**: Code splitting for web builds
+
+### Performance Targets
+
+- **60 FPS** gameplay on modern devices
+- **< 3s** initial load time
+- **< 100MB** total bundle size
+- **90%+** Lighthouse performance score
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **Dependencies conflicts**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+2. **Build failures**
+   ```bash
+   # Clear caches
+   npm start -- --clear-cache
+   expo r -c
+   ```
+
+3. **Docker issues**
+   ```bash
+   # Reset Docker environment
+   docker-compose down
+   docker system prune -f
+   ```
+
+4. **TypeScript errors**
+   ```bash
+   npm run type-check
+   ```
+
+## 🤝 Contributing
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+### Development Guidelines
+
+- Write tests for new features
+- Follow TypeScript strict mode
+- Use conventional commit messages
+- Update documentation for API changes
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Original Game**: Created by Rafael Silva in 2011
+- **Music**: DeadMau5 tracks (with permission)
+- **Sound Effects**: SoundJay and Sound Bible
+- **Sprites**: Original artwork and public domain assets
+
+## 📧 Support
+
+- **Issues**: [GitHub Issues](link-to-issues)
+- **Discussions**: [GitHub Discussions](link-to-discussions)
+- **Email**: [your-email@domain.com](mailto:your-email@domain.com)
+
+---
+
+Built with ❤️ using React Native, Expo, and TypeScript
+
+*"Navigate through space and time - find your way home!"*
